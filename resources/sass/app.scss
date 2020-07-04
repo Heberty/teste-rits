@@ -1,0 +1,15 @@
+// Dependências
+@import "~bootstrap/scss/bootstrap";
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+
+// Communs
+@import "communs/variables";
+@import "communs/fonts";
+@import "communs/base";
+@import "communs/commun";
+@import "communs/button";
+@import "communs/text";
+@import "communs/title";
+
+// Sections
+@import "sections/section_main";

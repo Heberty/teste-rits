@@ -1,0 +1,23 @@
+.section-main {
+	position: relative;
+
+	.title-main {
+		@extend .muliExtraBold;
+
+		color: $text-color;
+		font-size: 48px;
+	}
+
+	.image-main {
+		max-width: 100%;
+		height: auto;
+
+		@media(min-width: 992px) {
+			position: absolute;
+	    	right: -100%;
+	    	top: 0;
+	    	max-width: unset;
+	    	height: unset;
+		}
+	}
+}

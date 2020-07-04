@@ -1,0 +1,13 @@
+.text-area {
+	p, a, span, small, li {
+		@extend .muliRegular;
+		
+		color: $text-color;
+	}
+
+	strong, b, h1, h2, h3, h4, h5 {
+		@extend .muliExtraBold;
+	}
+
+	
+}

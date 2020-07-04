@@ -1,0 +1,50 @@
+.btn-site {
+	@extend .muliExtraBold;
+
+	position: relative;
+	border: none;
+	display: inline-block;
+
+	&:hover {
+		transition: 0.2s ease;
+
+		&:before {
+			content: "Quero me candidatar";
+			transition: 0.2s ease;
+		}
+
+		&:after {
+			right: -5px;
+			bottom: -5px;
+			transition: 0.2s ease;
+		}
+	}
+
+	&:before {
+		content: "Quero me inscrever";
+		font-size: 16px;
+		text-transform: uppercase;
+		background-color: $pink;
+		padding: 19px 37px;
+		transition: 0.2s ease;
+		display: inline-block;
+		position: relative;
+		z-index: 2;
+		width: 300px;
+		text-align: center;
+		color: #fff;
+	}
+
+	&:after {
+		content: "";
+		background-color: $purple;
+		width: 100%;
+		height: 100%;
+		transition: 0.2s ease;
+		position: absolute;
+		right: -10px;
+		bottom: -10px;
+		display: inline-block;
+		z-index: 1;
+	}
+}
