@@ -1,0 +1,89 @@
+.green-block {
+	background-color: $green;
+	height: 340px;
+
+	@media(min-width: 992px) {
+		height: 540px;
+	}
+}
+
+.section-video {
+	margin-top: -230px;
+
+	@media(min-width: 992px) {
+		margin-top: -340px;
+	}
+
+	.body-video {
+		position: relative;
+		background-color: #fff;
+		box-shadow: 0 30px 60px rgba(0,0,0,.15);
+		padding: 72px 15px;
+
+		@media(min-width: 992px) {
+			padding: 75px 0;
+		}
+	}
+
+	.title-video {
+		@extend .muliExtraBold;
+
+		font-size: 36px;
+		color: $pink;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			width: 10px;
+			height: 91px;
+			background-color: $purple;
+			left: -3.6%;
+
+			@media(min-width: 576px) {
+				left: -3.1%;
+			}
+
+			@media(min-width: 768px) {
+			    left: -2.2%;
+			}
+
+			@media(min-width: 992px) {
+				left: -17%;
+			}
+		}
+	}
+
+	.video-itself {
+		@extend .center-center;
+
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		transition: 0.2s ease;
+		height: 300px;
+
+		@media(min-width: 576px) {
+			height: 440px;
+		}
+
+		@media(min-width: 992px) {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+			background-size: auto 100%;
+			height: 341px;
+
+			&:hover {
+				background-size: auto 110%;
+				transition: 0.2s ease;
+			}
+		}
+
+		.icon-play {
+			width: 100px;
+		}
+	}
+}

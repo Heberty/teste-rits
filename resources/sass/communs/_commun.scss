@@ -19,3 +19,7 @@
 .mt80 {margin-top: 80px;}
 .mt90 {margin-top: 90px;}
 .mt100 {margin-top: 100px;}
+
+.center-center {
+	@extend .d-flex, .align-items-center, .justify-content-center;
+}

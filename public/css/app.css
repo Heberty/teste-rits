@@ -7230,7 +7230,9 @@ button.bg-dark:focus {
   display: table-cell !important;
 }
 
-.d-flex {
+.d-flex,
+.center-center,
+.section-video .video-itself {
   display: flex !important;
 }
 
@@ -7527,7 +7529,9 @@ button.bg-dark:focus {
   justify-content: flex-end !important;
 }
 
-.justify-content-center {
+.justify-content-center,
+.center-center,
+.section-video .video-itself {
   justify-content: center !important;
 }
 
@@ -7547,7 +7551,9 @@ button.bg-dark:focus {
   align-items: flex-end !important;
 }
 
-.align-items-center {
+.align-items-center,
+.center-center,
+.section-video .video-itself {
   align-items: center !important;
 }
 
@@ -10949,6 +10955,7 @@ a.text-dark:focus {
 }
 
 .muliExtraBold,
+.section-video .title-video,
 .section-main .title-main,
 .text-area strong,
 .text-area b,
@@ -11139,5 +11146,107 @@ body a:hover {
     max-width: unset;
     height: unset;
   }
+}
+
+.green-block {
+  background-color: #00BF6F;
+  height: 340px;
+}
+
+@media (min-width: 992px) {
+  .green-block {
+    height: 540px;
+  }
+}
+
+.section-video {
+  margin-top: -230px;
+}
+
+@media (min-width: 992px) {
+  .section-video {
+    margin-top: -340px;
+  }
+}
+
+.section-video .body-video {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  padding: 72px 15px;
+}
+
+@media (min-width: 992px) {
+  .section-video .body-video {
+    padding: 75px 0;
+  }
+}
+
+.section-video .title-video {
+  font-size: 36px;
+  color: #EF426F;
+}
+
+.section-video .title-video:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 91px;
+  background-color: #363D87;
+  left: -3.6%;
+}
+
+@media (min-width: 576px) {
+  .section-video .title-video:before {
+    left: -3.1%;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-video .title-video:before {
+    left: -2.2%;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-video .title-video:before {
+    left: -17%;
+  }
+}
+
+.section-video .video-itself {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.2s ease;
+  height: 300px;
+}
+
+@media (min-width: 576px) {
+  .section-video .video-itself {
+    height: 440px;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-video .video-itself {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    background-size: auto 100%;
+    height: 341px;
+  }
+
+  .section-video .video-itself:hover {
+    background-size: auto 110%;
+    transition: 0.2s ease;
+  }
+}
+
+.section-video .video-itself .icon-play {
+  width: 100px;
 }
 
