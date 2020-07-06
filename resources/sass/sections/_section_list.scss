@@ -1,0 +1,125 @@
+.section-list {
+	background-color: $gray;
+	padding: 200px 0 100px 0;
+	margin-top: -100px;
+
+	.title-list {
+		@extend .muliExtraBold;
+
+		font-size: 28px;
+		color: #fff;
+		margin-bottom: 90px;
+
+		@media(min-width: 576px) {
+			font-size: 48px;
+		}
+	}
+
+	.nav-tabs {
+		@extend .list-unstyled, .flex-column;
+
+		border-bottom: 0;
+		margin-bottom: 30px;
+
+		@media(min-width: 992px) {
+			margin-bottom: 0;
+		}
+
+		.nav-item {
+
+			.nav-link {
+				position: relative;
+				border-radius: 0;
+				border: none;
+				padding: 0;
+
+				.link-top {
+					@extend .muliExtraBold, .d-flex, .align-items-center;
+
+					display: block;
+					padding: 40px 50px;
+					background-color: $gray-md;	
+					font-size: 28px;
+					color: $gray-text;
+					transition: 0.3s ease;
+					position: relative;
+					z-index: 2;
+
+					&:after {
+						content: "";
+						width: 26px;
+						height: 24px;
+						background-size: cover;
+						background-repeat: no-repeat;
+						background-position: center;
+						background-image: url('/images/arrow-right-gray.svg');
+						display: inline-block;
+						margin-left: auto;
+					}
+				}
+
+				.link-down {
+					width: 100%;
+					height: 100%;
+					background-color: $pink;
+					position: absolute;
+					left: 0;
+					top: 0;
+					z-index: 1;
+				}
+
+				&.active,
+				&:hover {
+
+					.link-top {
+						background-color: #fff;
+						transition: 0.3s ease;
+						transform: translate(-10px, -10px);
+
+						&:after {
+							background-image: url('/images/arrow-right-pink.svg');
+						}	
+					}
+				}
+			}
+		}
+	}
+
+	.tab-content {
+		
+		.tab-pane {
+			
+			.list-itself {
+				@extend .list-unstyled;
+				
+				&-item {
+					@extend .d-flex, .justify-content-between;
+
+					padding: 30px 30px 40px 30px;
+					background-color: $gray-dk;
+					margin-bottom: 5px;
+
+					&-name,
+					&-funcition {
+						@extend .muliRegular;
+					}
+
+					&-name {
+						color: #fff;
+						font-size: 18px;
+						margin-bottom: 0;
+					}
+
+					&-function {
+						color: $pink;
+						font-size: 14px;
+					}
+				}
+			}
+
+			&.active {
+
+			}
+		}
+	}
+}

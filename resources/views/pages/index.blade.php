@@ -14,4 +14,6 @@
 	
 	@include('pages.layouts.sections._section_brands')
 	
+	@include('pages.layouts.sections._section_list')
+	
 @endsection

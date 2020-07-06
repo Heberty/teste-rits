@@ -466,6 +466,8 @@ mark,
 }
 
 .list-unstyled,
+.section-list .tab-content .tab-pane .list-itself,
+.section-list .nav-tabs,
 .section-brands .list-card-brand,
 .section-clerk .list-clerk,
 .section-student .list-student,
@@ -7241,6 +7243,8 @@ button.bg-dark:focus {
 }
 
 .d-flex,
+.section-list .tab-content .tab-pane .list-itself-item,
+.section-list .nav-tabs .nav-item .nav-link .link-top,
 .section-brands .list-card-brand-item,
 .section-brands .list-card-brand,
 .section-clerk .list-clerk-item,
@@ -7495,6 +7499,7 @@ button.bg-dark:focus {
 }
 
 .flex-column,
+.section-list .nav-tabs,
 .section-brands .list-card-brand-item,
 .section-brands .list-card-brand {
   flex-direction: column !important;
@@ -7558,6 +7563,7 @@ button.bg-dark:focus {
 }
 
 .justify-content-between,
+.section-list .tab-content .tab-pane .list-itself-item,
 .section-brands .list-card-brand-item {
   justify-content: space-between !important;
 }
@@ -7575,6 +7581,7 @@ button.bg-dark:focus {
 }
 
 .align-items-center,
+.section-list .nav-tabs .nav-item .nav-link .link-top,
 .section-brands .list-card-brand-item,
 .section-brands .list-card-brand,
 .section-clerk .list-clerk-item,
@@ -10985,6 +10992,8 @@ a.text-dark:focus {
 }
 
 .muliExtraBold,
+.section-list .nav-tabs .nav-item .nav-link .link-top,
+.section-list .title-list,
 .section-brands .list-card-brand-item-title,
 .section-brands .title-brand,
 .section-clerk .list-clerk-item-text,
@@ -11008,6 +11017,8 @@ a.text-dark:focus {
 }
 
 .muliRegular,
+.section-list .tab-content .tab-pane .list-itself-item-name,
+.section-list .tab-content .tab-pane .list-itself-item-funcition,
 .section-clerk .list-clerk-item-text span,
 .section-clerk .text-clerk strong span,
 .section-student .list-student-item-text span,
@@ -11298,6 +11309,11 @@ body a:hover {
     background-size: auto 110%;
     transition: 0.2s ease;
   }
+}
+
+.section-video .video-itself:hover .icon-play {
+  background-color: #EF426F;
+  border-radius: 50%;
 }
 
 .section-video .video-itself .icon-play {
@@ -11679,5 +11695,103 @@ body a:hover {
 
 .section-brands .list-card-brand .text-area {
   margin-bottom: auto;
+}
+
+.section-list {
+  background-color: #2A2E31;
+  padding: 200px 0 100px 0;
+  margin-top: -100px;
+}
+
+.section-list .title-list {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 90px;
+}
+
+@media (min-width: 576px) {
+  .section-list .title-list {
+    font-size: 48px;
+  }
+}
+
+.section-list .nav-tabs {
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  .section-list .nav-tabs {
+    margin-bottom: 0;
+  }
+}
+
+.section-list .nav-tabs .nav-item .nav-link {
+  position: relative;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+}
+
+.section-list .nav-tabs .nav-item .nav-link .link-top {
+  display: block;
+  padding: 40px 50px;
+  background-color: #40464A;
+  font-size: 28px;
+  color: #5F676C;
+  transition: 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.section-list .nav-tabs .nav-item .nav-link .link-top:after {
+  content: "";
+  width: 26px;
+  height: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/images/arrow-right-gray.svg");
+  display: inline-block;
+  margin-left: auto;
+}
+
+.section-list .nav-tabs .nav-item .nav-link .link-down {
+  width: 100%;
+  height: 100%;
+  background-color: #EF426F;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.section-list .nav-tabs .nav-item .nav-link.active .link-top,
+.section-list .nav-tabs .nav-item .nav-link:hover .link-top {
+  background-color: #fff;
+  transition: 0.3s ease;
+  transform: translate(-10px, -10px);
+}
+
+.section-list .nav-tabs .nav-item .nav-link.active .link-top:after,
+.section-list .nav-tabs .nav-item .nav-link:hover .link-top:after {
+  background-image: url("/images/arrow-right-pink.svg");
+}
+
+.section-list .tab-content .tab-pane .list-itself-item {
+  padding: 30px 30px 40px 30px;
+  background-color: #1D2327;
+  margin-bottom: 5px;
+}
+
+.section-list .tab-content .tab-pane .list-itself-item-name {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.section-list .tab-content .tab-pane .list-itself-item-function {
+  color: #EF426F;
+  font-size: 14px;
 }
 

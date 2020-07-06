@@ -83,6 +83,14 @@
 			}
 		}
 
+		&:hover {
+
+			.icon-play {
+				background-color: $pink;
+				border-radius: 50%;
+			}
+		}
+
 		.icon-play {
 			width: 100px;
 		}
