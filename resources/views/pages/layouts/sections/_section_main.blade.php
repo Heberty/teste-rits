@@ -9,7 +9,7 @@
 				<a href="javascript:;" class="btn-site"></a>
 			</div>
 			<div class="image-main">
-				<img src="{{ asset('images/image-student.jpg') }}" alt="">
+				<img src="{{ asset('images/image-main.jpg') }}" alt="">
 			</div>
 		</div>
 	</div>

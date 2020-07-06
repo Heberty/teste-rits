@@ -8,4 +8,6 @@
 	
 	@include('pages.layouts.sections._section_video_chamada')
 	
+	@include('pages.layouts.sections._section_student')
+	
 @endsection
