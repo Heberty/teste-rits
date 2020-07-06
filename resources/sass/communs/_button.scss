@@ -25,14 +25,18 @@
 		font-size: 16px;
 		text-transform: uppercase;
 		background-color: $pink;
-		padding: 19px 37px;
 		transition: 0.2s ease;
 		display: inline-block;
 		position: relative;
 		z-index: 2;
-		width: 300px;
 		text-align: center;
 		color: #fff;
+		padding: 13px 27px;
+		width: 260px;
+
+		@media(min-width: 576px) {
+			width: 300px;
+		}
 	}
 
 	&:after {

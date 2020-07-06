@@ -8,8 +8,8 @@
 				</div>
 				<a href="javascript:;" class="btn-site"></a>
 			</div>
-			<div class="col-12 offset-lg-2 col-lg-6 order-lg-2 order-1">
-				<img src="{{ asset('images/image-student.jpg') }}" alt="" class="image-main">
+			<div class="image-main">
+				<img src="{{ asset('images/image-student.jpg') }}" alt="">
 			</div>
 		</div>
 	</div>

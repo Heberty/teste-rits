@@ -13,11 +13,16 @@
 		height: auto;
 
 		@media(min-width: 992px) {
+			width: 50%;
 			position: absolute;
-	    	right: -100%;
+	    	right: 0;
 	    	top: 0;
 	    	max-width: unset;
 	    	height: unset;
+		}
+
+		img {
+			width: 100%;
 		}
 	}
 }

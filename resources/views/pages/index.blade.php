@@ -6,4 +6,6 @@
 	
 	@include('pages.layouts.sections._section_video')
 	
+	@include('pages.layouts.sections._section_video_chamada')
+	
 @endsection
