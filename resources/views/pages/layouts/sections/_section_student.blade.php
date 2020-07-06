@@ -1,7 +1,7 @@
 <section class="section-student">
 	<div class="container">
 		<div class="row no-gutters">
-			<div class="col-12 col-lg-5 block-01 d-flex align-items-center">
+			<div class="col-12 col-lg-5 block-01 d-flex align-items-center order-2 order-lg-1">
 				<ul class="list-student">
 					<li class="list-student-item">
 						<div class="list-student-item-icon">
@@ -23,7 +23,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col-12 offset-lg-1 col-lg-6 block-02">
+			<div class="col-12 offset-lg-1 col-lg-6 block-02 order-1 order-lg-2">
 				<div class="row no-gutters">
 					<div class="col-12 offset-lg-1 col-lg-9">
 						<div class="text-student">

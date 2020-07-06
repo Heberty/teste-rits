@@ -10,4 +10,6 @@
 	
 	@include('pages.layouts.sections._section_student')
 	
+	@include('pages.layouts.sections._section_clerk')
+	
 @endsection
