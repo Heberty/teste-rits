@@ -12,4 +12,6 @@
 	
 	@include('pages.layouts.sections._section_clerk')
 	
+	@include('pages.layouts.sections._section_brands')
+	
 @endsection

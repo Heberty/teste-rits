@@ -1,0 +1,127 @@
+.section-brands {
+	position: relative;
+
+	&:after {
+		content: "";
+		z-index: -1;
+		position: absolute;
+
+		@media(min-width: 992px) {
+			top: 0;
+			right: 0;
+			background-color: $gray-lt;
+			width: 50%;
+			height: 100%;
+		}
+	}
+
+	.title-brand {
+		@extend .muliExtraBold;
+
+		color: $text-color;
+		margin-top: 100px;
+		margin-bottom: 60px;
+		font-size: 34px;
+
+		@media(min-width: 992px) {
+			font-size: 39px;
+		}
+
+		@media(min-width: 1200px) {
+			font-size: 48px;
+		}
+	}
+
+	.image-brand {
+		@extend .img-fluid;
+
+		margin-bottom: 40px;
+
+		@media(min-width: 992px) {
+			margin-top: -80px;
+			margin-bottom: 0;
+		}
+	}
+
+	$colors: $pink, $green, $blue;
+
+	@for $i from 1 through length($colors) {
+	    .list-card-brand {
+    		.list-card-brand-item {
+	    		&:nth-child(#{length($colors)}n+#{$i}) {
+
+		    		.list-card-brand-item-title {
+		        		color: nth($colors, $i)
+		    		}
+
+		    		&:after {
+		    			background-color: nth($colors, $i);
+		    		}
+	    		}
+	        }
+	    }
+	}
+
+	.list-card-brand {
+		@extend .list-unstyled, .d-flex, .align-items-center, .align-items-lg-start, .flex-column, .flex-lg-row, .flex-wrap;
+
+		width: 100%;
+
+		@media(min-width: 992px) {
+			width: unset;
+		}
+
+		&-item {
+			@extend .d-flex, .flex-column, .justify-content-between, .align-items-center;
+
+			padding: 60px 40px 40px 40px;
+			background-color: #fff;
+			box-shadow: 0 30px 60px rgba(0,0,0,.15);
+			position: relative;
+			width: 100%;
+			max-width: 350px;
+			margin-bottom: 30px;
+			margin-right: 0;
+
+			@media(min-width: 992px) {
+				width: 22.222%;
+				flex: 22.222%;
+				margin-bottom: 0;
+				margin-right: 30px;
+				height: 453px;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:after {
+				content: "";
+				width: 290px;
+				height: 5px;
+				display: block;
+				margin: 0 auto;
+				position: absolute;
+				bottom: -3px;
+				right: 0;
+				left: 0;
+			}
+
+			&-title {
+				@extend .muliExtraBold;
+
+				font-size: 28px;
+			}
+
+			&-diviser {
+				border-top: 1px solid #E0E0E0;
+				margin: 40px 0 50px 0;
+				width: 100%;
+			}
+		}
+
+		.text-area {
+			margin-bottom: auto;
+		}
+	}
+}
