@@ -16,4 +16,6 @@
 	
 	@include('pages.layouts.sections._section_list')
 	
+	@include('pages.layouts.sections._section_contact')
+	
 @endsection

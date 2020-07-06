@@ -7243,6 +7243,7 @@ button.bg-dark:focus {
 }
 
 .d-flex,
+.section-contact .contain-contact .card-contact,
 .section-list .tab-content .tab-pane .list-itself-item,
 .section-list .nav-tabs .nav-item .nav-link .link-top,
 .section-brands .list-card-brand-item,
@@ -7555,6 +7556,7 @@ button.bg-dark:focus {
 }
 
 .justify-content-center,
+.section-contact .contain-contact .card-contact,
 .section-clerk .box-btn-clerk,
 .section-student .box-btn-student,
 .center-center,
@@ -7581,6 +7583,7 @@ button.bg-dark:focus {
 }
 
 .align-items-center,
+.section-contact .contain-contact .card-contact,
 .section-list .nav-tabs .nav-item .nav-link .link-top,
 .section-brands .list-card-brand-item,
 .section-brands .list-card-brand,
@@ -10992,6 +10995,7 @@ a.text-dark:focus {
 }
 
 .muliExtraBold,
+.section-contact .contain-contact .card-contact-title,
 .section-list .nav-tabs .nav-item .nav-link .link-top,
 .section-list .title-list,
 .section-brands .list-card-brand-item-title,
@@ -11699,7 +11703,7 @@ body a:hover {
 
 .section-list {
   background-color: #2A2E31;
-  padding: 200px 0 100px 0;
+  padding: 200px 0 160px 0;
   margin-top: -100px;
 }
 
@@ -11793,5 +11797,62 @@ body a:hover {
 .section-list .tab-content .tab-pane .list-itself-item-function {
   color: #EF426F;
   font-size: 14px;
+}
+
+.section-contact .contain-contact {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  margin-top: -100px;
+}
+
+.section-contact .contain-contact .card-contact {
+  background-color: #fff;
+  display: block;
+  padding: 60px 0;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+@media (min-width: 992px) {
+  .section-contact .contain-contact .card-contact {
+    border-right: 1px solid #E0E0E0;
+    border-bottom: 0;
+  }
+}
+
+.section-contact .contain-contact .card-contact-icon {
+  width: 57px;
+  height: 60px;
+  margin-right: 42px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-contact .contain-contact .card-contact-icon.mail {
+  background-image: url("/images/icon-mail-gray.svg");
+}
+
+.section-contact .contain-contact .card-contact-icon.phone {
+  background-image: url("/images/icon-phone-gray.svg");
+}
+
+.section-contact .contain-contact .card-contact-icon.whatsapp {
+  background-image: url("/images/icon-whatsapp-gray.svg");
+}
+
+.section-contact .contain-contact .card-contact:hover .card-contact-icon.mail {
+  background-image: url("/images/icon-mail-blue.svg");
+}
+
+.section-contact .contain-contact .card-contact:hover .card-contact-icon.phone {
+  background-image: url("/images/icon-phone-blue.svg");
+}
+
+.section-contact .contain-contact .card-contact:hover .card-contact-icon.whatsapp {
+  background-image: url("/images/icon-whatsapp-green.svg");
+}
+
+.section-contact .contain-contact .card-contact-title {
+  font-size: 28px;
+  color: #2A2E31;
 }
 

@@ -1,0 +1,67 @@
+.section-contact {
+
+	.contain-contact {
+		box-shadow: 0 30px 60px rgba(0,0,0,.15);
+		margin-top: -100px;
+
+		.card-contact {
+			@extend .d-flex, .align-items-center, .justify-content-center;
+			
+			background-color: #fff;
+			display: block;
+			padding: 60px 0;
+			border-bottom: 1px solid #E0E0E0;
+
+			@media(min-width: 992px) {
+				border-right: 1px solid #E0E0E0;
+				border-bottom: 0;
+			}
+
+			&-icon {
+				width: 57px;
+				height: 60px;
+				margin-right: 42px;
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+
+				&.mail {
+					background-image: url('/images/icon-mail-gray.svg');
+				}
+
+				&.phone {
+					background-image: url('/images/icon-phone-gray.svg');
+				}
+
+				&.whatsapp {
+					background-image: url('/images/icon-whatsapp-gray.svg');
+				}
+			}
+
+			&:hover {
+
+				.card-contact-icon {
+
+					&.mail {
+						background-image: url('/images/icon-mail-blue.svg');
+					}
+
+					&.phone {
+						background-image: url('/images/icon-phone-blue.svg');
+					}
+
+					&.whatsapp {
+						background-image: url('/images/icon-whatsapp-green.svg');
+					}
+				}
+			}
+
+			&-title {
+				@extend .muliExtraBold;
+
+				font-size: 28px;
+				color: $text-color;
+			}
+		}
+	}
+}
