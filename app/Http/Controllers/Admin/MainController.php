@@ -13,9 +13,7 @@ class MainController extends Controller
 {
     public function edit(Main $main)
     {
-        $mains = Main::get();
-
-    	return view('admin.main.edit', compact('main', 'mains'));
+    	return view('admin.main.edit', compact('main'));
     }
 
     public function update(MainRequest $request, Main $main)
@@ -30,7 +28,7 @@ class MainController extends Controller
             $main->save();
 
             if($request->hasFile('image')) {
-                Storage::putFileAs('main', $request->file('image'), $main->image);
+                Storage::putFileAs('public/main', $request->file('image'), $main->image);
             }
 
             return redirect()->to('admin/main/edit/1')->with('success', 'Seção Main atualizada');
