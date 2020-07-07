@@ -1,0 +1,50 @@
+.footer-site {
+	padding-top: 80px;
+	padding-bottom: 30px;
+
+	.logo-footer {
+		width: 83px;
+		margin-bottom: 20px;
+
+		@media(min-width: 576px) {
+			margin-bottom: 0;
+		}
+	}
+
+	.list-networks {
+		@extend .list-unstyled, .d-flex, .align-items-center;
+
+		margin-bottom: 0;
+
+		&-item {
+			margin-right: 35px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&-link {
+
+				&-icon {
+					height: 20px;
+				}
+			}
+		}
+	}
+
+	.corporate,
+	.link-rits {
+		@extend .muliRegular;
+
+		font-size: 12px;
+		color: #747474;
+	}
+
+	.corporate {
+		margin-bottom: 20px;
+
+		@media(min-width: 576px) {
+			margin-bottom: 0;
+		}
+	}
+}

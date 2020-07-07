@@ -466,6 +466,7 @@ mark,
 }
 
 .list-unstyled,
+.footer-site .list-networks,
 .section-list .tab-content .tab-pane .list-itself,
 .section-list .nav-tabs,
 .section-brands .list-card-brand,
@@ -7243,6 +7244,7 @@ button.bg-dark:focus {
 }
 
 .d-flex,
+.footer-site .list-networks,
 .section-contact .contain-contact .card-contact,
 .section-list .tab-content .tab-pane .list-itself-item,
 .section-list .nav-tabs .nav-item .nav-link .link-top,
@@ -7583,6 +7585,7 @@ button.bg-dark:focus {
 }
 
 .align-items-center,
+.footer-site .list-networks,
 .section-contact .contain-contact .card-contact,
 .section-list .nav-tabs .nav-item .nav-link .link-top,
 .section-brands .list-card-brand-item,
@@ -11021,6 +11024,8 @@ a.text-dark:focus {
 }
 
 .muliRegular,
+.footer-site .corporate,
+.footer-site .link-rits,
 .section-list .tab-content .tab-pane .list-itself-item-name,
 .section-list .tab-content .tab-pane .list-itself-item-funcition,
 .section-clerk .list-clerk-item-text span,
@@ -11854,5 +11859,53 @@ body a:hover {
 .section-contact .contain-contact .card-contact-title {
   font-size: 28px;
   color: #2A2E31;
+}
+
+.footer-site {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.footer-site .logo-footer {
+  width: 83px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+  .footer-site .logo-footer {
+    margin-bottom: 0;
+  }
+}
+
+.footer-site .list-networks {
+  margin-bottom: 0;
+}
+
+.footer-site .list-networks-item {
+  margin-right: 35px;
+}
+
+.footer-site .list-networks-item:last-child {
+  margin-right: 0;
+}
+
+.footer-site .list-networks-item-link-icon {
+  height: 20px;
+}
+
+.footer-site .corporate,
+.footer-site .link-rits {
+  font-size: 12px;
+  color: #747474;
+}
+
+.footer-site .corporate {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+  .footer-site .corporate {
+    margin-bottom: 0;
+  }
 }
 
