@@ -11258,13 +11258,13 @@ body a:hover {
   border-right: 35px solid transparent;
 }
 
-.green-site-block {
+.green-block {
   background-color: #00BF6F;
   height: 340px;
 }
 
 @media (min-width: 992px) {
-  .green-site-block {
+  .green-block {
     height: 540px;
   }
 }

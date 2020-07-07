@@ -19,4 +19,16 @@ Route::group(['namespace' => 'Pages'], function() {
 
 Auth::routes();
 
-Route::get('/admin', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' => ['auth'], 'namespace' => 'Admin'], function() {
+	Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
+		Route::get('/', 'AdminController@index')->name('index');
+
+		/* Rotas de Main*/
+		Route::get('main/edit/{main}', 'MainController@edit')->name('main.edit');
+		Route::patch('main/{main}', 'MainController@update')->name('main.update');
+	});
+});
+
+
