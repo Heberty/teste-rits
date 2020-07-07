@@ -8,8 +8,8 @@
 				</div>
 				<a href="javascript:;" class="btn-site"></a>
 			</div>
-			<div class="image-main">
-				<img src="{{ asset('images/image-main.jpg') }}" alt="">
+			<div class="image-main" style="background-image: url('{{ asset('images/image-main.jpg') }}');">
+				<img src="{{ asset('images/image-main.jpg') }}" alt="Image main" class="sr-only">
 			</div>
 		</div>
 	</div>

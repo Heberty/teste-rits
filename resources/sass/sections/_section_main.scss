@@ -1,5 +1,10 @@
 .section-main {
 	position: relative;
+	padding-bottom: 100px;
+
+	@media(min-width: 992px) {
+		padding-top: 80px;
+	}
 
 	.title-main {
 		@extend .muliExtraBold;
@@ -9,20 +14,40 @@
 	}
 
 	.image-main {
-		max-width: 100%;
-		height: auto;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%;
+		height: 300px;
+
+		@media(min-width: 768px) {
+			height: 500px;
+		}
 
 		@media(min-width: 992px) {
-			width: 50%;
+			width: 60%;
 			position: absolute;
 	    	right: 0;
 	    	top: 0;
 	    	max-width: unset;
-	    	height: unset;
+	    	height: 700px;
 		}
 
-		img {
-			width: 100%;
+		@media(min-width: 1200px) {
+			height: 640px;
+			width: 50%;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			right: 15%;
+			bottom: -40px;
+			width: 0;
+			height: 0;
+			border-top: 60px solid #00EF8B;
+			border-left: 35px solid transparent;
+			border-right: 35px solid transparent;
 		}
 	}
 }
