@@ -1,0 +1,66 @@
+.header-site {
+
+	.header-body {
+		@extend .d-flex, .align-items-center, .justify-content-between;
+
+		background-color: #fff;
+		padding: 30px 0;
+
+		.logo-site {
+
+			img {
+				width: 100px;
+
+				@media(min-width: 576px) {
+					width: 180px;
+				}
+			}
+		}
+
+		.list-menu {
+			@extend .list-unstyled, .d-flex;
+
+			margin-bottom: 0;
+
+			&-item {
+				margin-right: 30px;
+
+				@media(min-width: 576px) {
+					margin-right: 80px;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				&-link {
+					@extend .muliRegular;
+
+					color: $text-color;
+					font-size: 16px;
+
+					@media(min-width: 992px) {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+
+	.whatsapp-ball {
+		background-color: #fff;
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+		padding: 17px;
+		position: fixed;
+		bottom: 5%;
+		right: 5%;
+		box-shadow: 0 5px 5px rgba(0,0,0,.15);
+		z-index: 10;
+
+		img {
+			width: 100%;
+		}
+	}
+}

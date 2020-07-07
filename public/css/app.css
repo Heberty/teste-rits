@@ -467,6 +467,7 @@ mark,
 
 .list-unstyled,
 .footer-site .list-networks,
+.header-site .header-body .list-menu,
 .section-list .tab-content .tab-pane .list-itself,
 .section-list .nav-tabs,
 .section-brands .list-card-brand,
@@ -7245,6 +7246,8 @@ button.bg-dark:focus {
 
 .d-flex,
 .footer-site .list-networks,
+.header-site .header-body .list-menu,
+.header-site .header-body,
 .section-contact .contain-contact .card-contact,
 .section-list .tab-content .tab-pane .list-itself-item,
 .section-list .nav-tabs .nav-item .nav-link .link-top,
@@ -7567,6 +7570,7 @@ button.bg-dark:focus {
 }
 
 .justify-content-between,
+.header-site .header-body,
 .section-list .tab-content .tab-pane .list-itself-item,
 .section-brands .list-card-brand-item {
   justify-content: space-between !important;
@@ -7586,6 +7590,7 @@ button.bg-dark:focus {
 
 .align-items-center,
 .footer-site .list-networks,
+.header-site .header-body,
 .section-contact .contain-contact .card-contact,
 .section-list .nav-tabs .nav-item .nav-link .link-top,
 .section-brands .list-card-brand-item,
@@ -11026,6 +11031,7 @@ a.text-dark:focus {
 .muliRegular,
 .footer-site .corporate,
 .footer-site .link-rits,
+.header-site .header-body .list-menu-item-link,
 .section-list .tab-content .tab-pane .list-itself-item-name,
 .section-list .tab-content .tab-pane .list-itself-item-funcition,
 .section-clerk .list-clerk-item-text span,
@@ -11859,6 +11865,67 @@ body a:hover {
 .section-contact .contain-contact .card-contact-title {
   font-size: 28px;
   color: #2A2E31;
+}
+
+.header-site .header-body {
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+.header-site .header-body .logo-site img {
+  width: 100px;
+}
+
+@media (min-width: 576px) {
+  .header-site .header-body .logo-site img {
+    width: 180px;
+  }
+}
+
+.header-site .header-body .list-menu {
+  margin-bottom: 0;
+}
+
+.header-site .header-body .list-menu-item {
+  margin-right: 30px;
+}
+
+@media (min-width: 576px) {
+  .header-site .header-body .list-menu-item {
+    margin-right: 80px;
+  }
+}
+
+.header-site .header-body .list-menu-item:last-child {
+  margin-right: 0;
+}
+
+.header-site .header-body .list-menu-item-link {
+  color: #2A2E31;
+  font-size: 16px;
+}
+
+@media (min-width: 992px) {
+  .header-site .header-body .list-menu-item-link {
+    font-size: 18px;
+  }
+}
+
+.header-site .whatsapp-ball {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 17px;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.header-site .whatsapp-ball img {
+  width: 100%;
 }
 
 .footer-site {

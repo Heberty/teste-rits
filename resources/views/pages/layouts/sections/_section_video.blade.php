@@ -1,7 +1,7 @@
 <div class="green-block">
 	
 </div>
-<section class="section-video" id="video">
+<section class="section-video" id="proin">
 	<div class="container position-relative">
 		<div class="row no-gutters d-flex justify-content-center d-lg-block">
 			<div class="col-12 col-lg-8 body-video row">
