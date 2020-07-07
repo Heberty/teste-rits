@@ -8,7 +8,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-color: $purple;
+		background-color: $purple-site;
 
 		@media(min-width: 992px) {
 			width: 50%;
@@ -30,7 +30,7 @@
 			span {
 				@extend .muliRegular;
 
-				color: $pink;
+				color: $pink-site;
 			}
 		}
 	}

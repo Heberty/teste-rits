@@ -1,5 +1,5 @@
-.green-block {
-	background-color: $green;
+.green-site-block {
+	background-color: $green-site;
 	height: 340px;
 
 	@media(min-width: 992px) {
@@ -30,7 +30,7 @@
 		@extend .muliExtraBold;
 
 		font-size: 36px;
-		color: $pink;
+		color: $pink-site;
 
 		&:before {
 			content: "";
@@ -38,7 +38,7 @@
 			top: 0;
 			width: 10px;
 			height: 91px;
-			background-color: $purple;
+			background-color: $purple-site;
 			left: -3.6%;
 
 			@media(min-width: 576px) {
@@ -86,7 +86,7 @@
 		&:hover {
 
 			.icon-play {
-				background-color: $pink;
+				background-color: $pink-site;
 				border-radius: 50%;
 			}
 		}

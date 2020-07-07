@@ -11258,13 +11258,13 @@ body a:hover {
   border-right: 35px solid transparent;
 }
 
-.green-block {
-  background-color: #38c172;
+.green-site-block {
+  background-color: #00BF6F;
   height: 340px;
 }
 
 @media (min-width: 992px) {
-  .green-block {
+  .green-site-block {
     height: 540px;
   }
 }
@@ -11295,7 +11295,7 @@ body a:hover {
 
 .section-video .title-video {
   font-size: 36px;
-  color: #f66d9b;
+  color: #EF426F;
 }
 
 .section-video .title-video:before {
@@ -11304,7 +11304,7 @@ body a:hover {
   top: 0;
   width: 10px;
   height: 91px;
-  background-color: #9561e2;
+  background-color: #363D87;
   left: -3.6%;
 }
 
@@ -11358,7 +11358,7 @@ body a:hover {
 }
 
 .section-video .video-itself:hover .icon-play {
-  background-color: #f66d9b;
+  background-color: #EF426F;
   border-radius: 50%;
 }
 
@@ -11377,7 +11377,7 @@ body a:hover {
   position: absolute;
   left: 0;
   top: 20px;
-  background-color: #38c172;
+  background-color: #00BF6F;
   z-index: -1;
 }
 
@@ -11458,7 +11458,7 @@ body a:hover {
   position: absolute;
   right: 0;
   top: 20px;
-  background-color: #f66d9b;
+  background-color: #EF426F;
   z-index: -1;
 }
 
@@ -11523,7 +11523,7 @@ body a:hover {
 }
 
 .section-student .text-student strong span {
-  color: #ffed4a;
+  color: #FFB81C;
 }
 
 .section-student .box-btn-student {
@@ -11544,7 +11544,7 @@ body a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #9561e2;
+  background-color: #363D87;
 }
 
 @media (min-width: 992px) {
@@ -11566,7 +11566,7 @@ body a:hover {
 }
 
 .section-clerk .text-clerk strong span {
-  color: #f66d9b;
+  color: #EF426F;
 }
 
 .section-clerk .block-01 {
@@ -11659,27 +11659,27 @@ body a:hover {
 }
 
 .section-brands .list-card-brand .list-card-brand-item:nth-child(3n+1) .list-card-brand-item-title {
-  color: #f66d9b;
+  color: #EF426F;
 }
 
 .section-brands .list-card-brand .list-card-brand-item:nth-child(3n+1):after {
-  background-color: #f66d9b;
+  background-color: #EF426F;
 }
 
 .section-brands .list-card-brand .list-card-brand-item:nth-child(3n+2) .list-card-brand-item-title {
-  color: #38c172;
+  color: #00BF6F;
 }
 
 .section-brands .list-card-brand .list-card-brand-item:nth-child(3n+2):after {
-  background-color: #38c172;
+  background-color: #00BF6F;
 }
 
 .section-brands .list-card-brand .list-card-brand-item:nth-child(3n+3) .list-card-brand-item-title {
-  color: #3490dc;
+  color: #00A9E0;
 }
 
 .section-brands .list-card-brand .list-card-brand-item:nth-child(3n+3):after {
-  background-color: #3490dc;
+  background-color: #00A9E0;
 }
 
 .section-brands .list-card-brand {
@@ -11805,7 +11805,7 @@ body a:hover {
 .section-list .nav-tabs .nav-item .nav-link .link-down {
   width: 100%;
   height: 100%;
-  background-color: #f66d9b;
+  background-color: #EF426F;
   position: absolute;
   left: 0;
   top: 0;
@@ -11821,7 +11821,7 @@ body a:hover {
 
 .section-list .nav-tabs .nav-item .nav-link.active .link-top:after,
 .section-list .nav-tabs .nav-item .nav-link:hover .link-top:after {
-  background-image: url("/images/arrow-right-pink.svg");
+  background-image: url("/images/arrow-right-pink-site.svg");
 }
 
 .section-list .tab-content .tab-pane .list-itself-item {
@@ -11837,7 +11837,7 @@ body a:hover {
 }
 
 .section-list .tab-content .tab-pane .list-itself-item-function {
-  color: #f66d9b;
+  color: #EF426F;
   font-size: 14px;
 }
 
@@ -11882,15 +11882,15 @@ body a:hover {
 }
 
 .section-contact .contain-contact .card-contact:hover .card-contact-icon.mail {
-  background-image: url("/images/icon-mail-blue.svg");
+  background-image: url("/images/icon-mail-blue-site.svg");
 }
 
 .section-contact .contain-contact .card-contact:hover .card-contact-icon.phone {
-  background-image: url("/images/icon-phone-blue.svg");
+  background-image: url("/images/icon-phone-blue-site.svg");
 }
 
 .section-contact .contain-contact .card-contact:hover .card-contact-icon.whatsapp {
-  background-image: url("/images/icon-whatsapp-green.svg");
+  background-image: url("/images/icon-whatsapp-green-site.svg");
 }
 
 .section-contact .contain-contact .card-contact-title {

@@ -8,7 +8,7 @@
 		position: absolute;
 		right: 0;
 		top: 20px;
-		background-color: $pink;
+		background-color: $pink-site;
 		z-index: -1;
 
 		@media(min-width: 992px) {
@@ -84,7 +84,7 @@
 			font-size: 28px;
 
 			span {
-				color: $yellow;
+				color: $yellow-site;
 			}
 		}
 	}

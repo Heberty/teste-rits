@@ -19,4 +19,4 @@ Route::group(['namespace' => 'Pages'], function() {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@index')->name('home');
