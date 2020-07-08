@@ -11867,6 +11867,7 @@ body a:hover {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  display: inline-block;
 }
 
 .section-contact .contain-contact .card-contact-icon.mail {
@@ -11882,15 +11883,15 @@ body a:hover {
 }
 
 .section-contact .contain-contact .card-contact:hover .card-contact-icon.mail {
-  background-image: url("/images/icon-mail-blue-site.svg");
+  background-image: url("/images/icon-mail-blue.svg");
 }
 
 .section-contact .contain-contact .card-contact:hover .card-contact-icon.phone {
-  background-image: url("/images/icon-phone-blue-site.svg");
+  background-image: url("/images/icon-phone-blue.svg");
 }
 
 .section-contact .contain-contact .card-contact:hover .card-contact-icon.whatsapp {
-  background-image: url("/images/icon-whatsapp-green-site.svg");
+  background-image: url("/images/icon-whatsapp-green.svg");
 }
 
 .section-contact .contain-contact .card-contact-title {

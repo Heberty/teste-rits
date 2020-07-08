@@ -24,6 +24,7 @@
 				background-size: contain;
 				background-position: center;
 				background-repeat: no-repeat;
+				display: inline-block;
 
 				&.mail {
 					background-image: url('/images/icon-mail-gray.svg');
@@ -43,15 +44,15 @@
 				.card-contact-icon {
 
 					&.mail {
-						background-image: url('/images/icon-mail-blue-site.svg');
+						background-image: url('/images/icon-mail-blue.svg');
 					}
 
 					&.phone {
-						background-image: url('/images/icon-phone-blue-site.svg');
+						background-image: url('/images/icon-phone-blue.svg');
 					}
 
 					&.whatsapp {
-						background-image: url('/images/icon-whatsapp-green-site.svg');
+						background-image: url('/images/icon-whatsapp-green.svg');
 					}
 				}
 			}
