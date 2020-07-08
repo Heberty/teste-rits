@@ -11821,7 +11821,7 @@ body a:hover {
 
 .section-list .nav-tabs .nav-item .nav-link.active .link-top:after,
 .section-list .nav-tabs .nav-item .nav-link:hover .link-top:after {
-  background-image: url("/images/arrow-right-pink-site.svg");
+  background-image: url("/images/arrow-right-pink.svg");
 }
 
 .section-list .tab-content .tab-pane .list-itself-item {
