@@ -14,7 +14,6 @@ class MainTableSeeder extends Seeder
         DB::table('mains')->insert([
     		'title' => 'Consectetur adipiscing elit',
     		'text'  => 'Quisque tincidunt: Quisque ultricies, tortor vitae tincidunt molestie, arcu enim imperdiet urna, id aliquet ipsum massa luctus ipsum.',
-    		'image' => '/images/image-main.jpg'
         ]);
     }
 }

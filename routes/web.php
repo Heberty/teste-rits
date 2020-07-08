@@ -28,6 +28,10 @@ Route::group(['middleware' => ['auth'], 'namespace' => 'Admin'], function() {
 		/* Rotas de Main*/
 		Route::get('main/edit/{main}', 'MainController@edit')->name('main.edit');
 		Route::patch('main/{main}', 'MainController@update')->name('main.update');
+
+		/* Rotas de Video*/
+		Route::get('video/edit/{video}', 'VideoController@edit')->name('video.edit');
+		Route::patch('video/{video}', 'VideoController@update')->name('video.update');
 	});
 });
 

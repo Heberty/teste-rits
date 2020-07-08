@@ -254,6 +254,11 @@ return [
             'url'  => 'admin/main/edit/1',
             'icon' => 'fas fa-puzzle-piece',
         ],
+        [
+            'text' => 'Seção Video',
+            'url'  => 'admin/video/edit/1',
+            'icon' => 'fas fa-puzzle-piece',
+        ],
         // [
         //     'text' => 'change_password',
         //     'url'  => 'admin/settings',
